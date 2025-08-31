@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link
+      as="style"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Merriweather%3Awght%40300%3B400%3B700%3B900&amp;family=Lora%3Awght%40400%3B500%3B600%3B700&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Spline+Sans%3Awght%40400%3B500%3B700"
+      onload="this.rel='stylesheet'"
+      rel="stylesheet"
+    />
+    <title>North Indian Chapati - Authentic Indian Cuisine</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style type="text/tailwindcss">
+      :root {
+        --primary-color: #c8a46e;
+        --secondary-color: #f5f5f0;
+        --text-dark: #333333;
+        --text-light: #666666;
+        --accent-color: #e4c590;
+      }
+      body {
+        font-family: "Lora", serif;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Merriweather", serif;
+      }
+    </style>
+  </head>
+  <body class="bg-stone-50">
+    <div
+      class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden"
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <header
+          class="flex items-center justify-between whitespace-nowrap border-b border-solid border-stone-200 px-10 py-4 shadow-sm bg-white"
+        >
+          <div class="flex items-center gap-4 text-stone-800">
+            <svg
+              class="h-8 w-8 text-[var(--primary-color)]"
+              fill="none"
+              viewBox="0 0 48 48"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z"
+                fill="currentColor"
+              ></path>
+            </svg>
+            <h1 class="text-2xl font-bold tracking-tight text-stone-900">
+              North Indian Chapati
+            </h1>
+          </div>
+          <nav class="flex flex-1 justify-end items-center gap-8">
+            <div class="hidden md:flex items-center gap-8">
+              <a
+                class="text-stone-600 hover:text-[var(--primary-color)] text-base font-medium transition-colors"
+                href="menu.html"
+                >Menu</a
+              >
+              <a
+                class="text-stone-600 hover:text-[var(--primary-color)] text-base font-medium transition-colors"
+                href="contact.html"
+                >Contact</a
+              >
+              <a
+                class="text-stone-600 hover:text-[var(--primary-color)] text-base font-medium transition-colors"
+                href="home.html"
+                >About Us</a
+              >
+            </div>
+            <div class="flex items-center gap-3">
+              <!-- <button
+                class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-11 px-6 bg-[var(--primary-color)] text-white text-base font-bold leading-normal tracking-wide shadow-md hover:bg-opacity-90 transition-all"
+              >
+                <span class="truncate">Order Online</span>
+              </button> -->
+              <!-- <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-11 px-6 bg-stone-100 text-stone-800 text-base font-bold leading-normal tracking-wide hover:bg-stone-200 transition-all"
+              >
+                <span class="truncate">Login</span>
+              </button> -->
+            </div>
+          </nav>
+        </header>
+        <main class="flex-1">
+          <section
+            class="relative flex min-h-[60vh] items-center justify-center bg-cover bg-center py-20"
+            style="
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.5) 0%,
+                  rgba(0, 0, 0, 0.6) 100%
+                ),
+                url('https://lh3.googleusercontent.com/aida-public/AB6AXuCjEa9zKHQCCPxZ5Gv-8TYi56yHVkwM6QwVUXCyP6IcuSqxsmLZ7qh17kSgVVZhlPLzuCfuvX6HRAeva45i-QJvxGmk4FuH3w5zZ5mOVtjmQB8ytObCp-C_0UfqiR1Xx1xYAjjG2gdsDPIEIi-L8NTKBHEMxlkap7RHJmMZS7ROw2iGpzjABUN1VXBLM-tig-7WBS7_XaWFmRfxk5lviDPkjbzbCTUXHW_bRxUPXs44NbmKrH_IBjUSlD4wAKzOXZi8VwRnCdDnOvM');
+            "
+          >
+            <div class="container mx-auto px-4 text-center text-white">
+              <h2
+                class="text-4xl md:text-6xl font-black leading-tight tracking-tight drop-shadow-lg"
+              >
+                Taste the Tradition of North India
+              </h2>
+              <p
+                class="mt-4 max-w-2xl mx-auto text-lg md:text-xl font-light leading-relaxed drop-shadow-md"
+              >
+                Experience the authentic flavors of our homeland, prepared with
+                passion and the freshest ingredients.
+              </p>
+              <button
+                class="mt-8 flex mx-auto min-w-[150px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 px-8 bg-[var(--primary-color)] text-white text-lg font-bold leading-normal tracking-wide shadow-xl hover:bg-opacity-90 transform hover:scale-105 transition-all"
+              >
+                <span class="truncate">Order Now</span>
+              </button>
+            </div>
+          </section>
+          <section class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+              <h3 class="text-4xl font-bold text-center text-stone-900 mb-12">
+                Our Featured Dishes
+              </h3>
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12"
+              >
+                <div
+                  class="flex flex-col gap-4 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2"
+                >
+                  <div
+                    class="w-full h-64 bg-center bg-no-repeat bg-cover"
+                    style="
+                      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCyaJaSl84-flqZTTvgzJ9cpaMxoUADaNxeG-0BaHJfuMwB6IpFfyW1nhU2s0dU2juY69wXPSF9AfdrHY0zKTPW3pwP23fkAK_3ZzPw_Uw9n61FKPAdntVxSTlQWXJyRdcd8t34T4qsSGcNFsszmvLXji3xD-QIOEAFc9iKgXeBpz1Qs876wKUQ3KOlEykuJiIZ-FGhFfNbpIMWA8aAYtbSTm4yOaaF6mXQzVMMQoUzg41G-YXdUf9z-kNyVMBdD1bFUTYyy9Ymnxs');
+                    "
+                  ></div>
+                  <div class="p-6">
+                    <h4 class="text-xl font-bold text-stone-800">
+                      Butter Chicken
+                    </h4>
+                    <p class="text-stone-600 mt-2">
+                      Tender chicken pieces simmered in a rich and creamy
+                      tomato-based sauce.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col gap-4 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2"
+                >
+                  <div
+                    class="w-full h-64 bg-center bg-no-repeat bg-cover"
+                    style="
+                      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCtY5NFWC3hTgkMjeFOot6cxQoiYcVKBlMTB3WQ0Hkr1zqik_KkFtXfEYxahVDMlkAN41_-NHC0EtmXmUeFlh086r3z8ew8405aPH9eUJ3C_rhQGY_WWEBb9OJt-ACIImwv9VFtBxuOxKN2L1OG0qZqmLK7W9iv_NvpOzV0pujrnGTACjJT_jpXkExjIoEnMv6qcOptIbmNy2tohzhMjSlTHXeH2DznGHu3x5RTZevRLH5x6gpCSoF2eiB1ZHVx2FMoNgZMC8I4gg0');
+                    "
+                  ></div>
+                  <div class="p-6">
+                    <h4 class="text-xl font-bold text-stone-800">
+                      Palak Paneer
+                    </h4>
+                    <p class="text-stone-600 mt-2">
+                      Soft Indian cheese cubes cooked in a smooth, vibrant
+                      spinach curry.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col gap-4 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2"
+                >
+                  <div
+                    class="w-full h-64 bg-center bg-no-repeat bg-cover"
+                    style="
+                      background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA_wxcHXGcQTejYtLwjdOgRNMRgu1Qi1OhDk5LNhr-KVJs-67g4f_TWcZVE-nuWmt5pIU9DvvPpyg_sw51uc1t7xusX_afO3OCN--scYNwxfViSN1LqxHsi5Kw_PnvB7kjVTJpbxSbfoRxptMiLfU5-d0Ns-mmA-QjnD-bXGlzWksqI3wrA7Htv6B4iN2Ga-jYj5xd0DMif0x89FoVNPzeRD-xTRuZpE7UAm03VGitJc_9jV7oxf2_l_NDEDFTSg12iVwW_Qpg6WyA');
+                    "
+                  ></div>
+                  <div class="p-6">
+                    <h4 class="text-xl font-bold text-stone-800">
+                      Vegetable Biryani
+                    </h4>
+                    <p class="text-stone-600 mt-2">
+                      Aromatic basmati rice cooked with a medley of fresh
+                      vegetables and exotic spices.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="py-20 bg-stone-100">
+            <div class="container mx-auto px-4 text-center">
+              <h3 class="text-4xl font-bold text-stone-900 mb-6">Our Story</h3>
+              <p
+                class="text-stone-600 text-lg max-w-3xl mx-auto leading-relaxed"
+              >
+                At North Indian Chapati, we are passionate about bringing the
+                rich culinary heritage of North India to your table. Our journey
+                began with a simple mission: to share the authentic flavors and
+                cherished recipes passed down through generations, ensuring
+                every dish is a true and flavorful experience.
+              </p>
+            </div>
+          </section>
+          <section class="py-20 bg-white">
+            <div class="container mx-auto px-4 text-center">
+              <h3 class="text-4xl font-bold text-stone-900 mb-6">
+                Get In Touch
+              </h3>
+              <p
+                class="text-stone-600 text-lg max-w-3xl mx-auto leading-relaxed"
+              >
+                Have questions, feedback, or want to make a reservation? We'd
+                love to hear from you.
+              </p>
+              <p class="text-stone-800 text-xl font-semibold mt-6">
+                Call us at
+                <a
+                  class="text-[var(--primary-color)] hover:underline"
+                  href="tel:555-123-4567"
+                  >(+91) 6383763582</a
+                >
+                <!-- or email us at -->
+                <!-- <a
+                  class="text-[var(--primary-color)] hover:underline"
+                  href="mailto:info@northindianchapati.com"
+                  >info@northindianchapati.com</a
+                >. -->
+              </p>
+            </div>
+          </section>
+        </main>
+        <footer class="bg-stone-800 text-white">
+          <div class="container mx-auto py-10 px-5 text-center">
+            <div
+              class="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 mb-6"
+            >
+              <a
+                class="text-stone-300 hover:text-white text-base font-normal leading-normal transition-colors"
+                href="menu.html"
+                >Menu</a
+              >
+              <a
+                class="text-stone-300 hover:text-white text-base font-normal leading-normal transition-colors"
+                href="contact.html"
+                >Contact</a
+              >
+              <a
+                class="text-stone-300 hover:text-white text-base font-normal leading-normal transition-colors"
+                href="home.html"
+                >About Us</a
+              >
+              <a
+                class="text-stone-300 hover:text-white text-base font-normal leading-normal transition-colors"
+                href="home.html"
+                >Privacy Policy</a
+              >
+              <a
+                class="text-stone-300 hover:text-white text-base font-normal leading-normal transition-colors"
+                href="terms_service.html"
+                >Terms of Service</a
+              >
+            </div>
+            <div class="flex justify-center gap-6 mb-6">
+              <a
+                class="text-stone-300 hover:text-white transition-colors"
+                href="#"
+              >
+                <svg
+                  fill="currentColor"
+                  height="28"
+                  viewBox="0 0 256 256"
+                  width="28"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                class="text-stone-300 hover:text-white transition-colors"
+                href="#"
+              >
+                <svg
+                  fill="currentColor"
+                  height="28"
+                  viewBox="0 0 256 256"
+                  width="28"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                class="text-stone-300 hover:text-white transition-colors"
+                href="#"
+              >
+                <svg
+                  fill="currentColor"
+                  height="28"
+                  viewBox="0 0 256 256"
+                  width="28"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+            <p class="text-stone-400 text-base font-normal leading-normal">
+              © 2024 North Indian Chapati. All rights reserved.
+            </p>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
