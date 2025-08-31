@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu Creator</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .item { border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; border-radius: 8px; }
+    label { display: block; margin-top: 5px; }
+    input, textarea { width: 100%; padding: 5px; margin-top: 3px; }
+    button { margin-top: 10px; padding: 8px 12px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h2>Restaurant Menu Form</h2>
+  <form id="menuForm">
+    <div id="items"></div>
+    <button type="button" onclick="addItem()">Add Menu Item</button>
+    <button type="button" onclick="downloadJSON()">Download JSON</button>
+  </form>
+
+  <script>
+    let itemCount = 0;
+
+    function addItem() {
+      itemCount++;
+      const container = document.getElementById('items');
+
+      const div = document.createElement('div');
+      div.className = 'item';
+      div.innerHTML = `
+        <h3>Item ${itemCount}</h3>
+        <label>Heading: <input type="text" name="heading"></label>
+        <label>Dish: <input type="text" name="dish"></label>
+        <label>Price: <input type="text" name="price"></label>
+        <label>Description: <textarea name="description"></textarea></label>
+        <label>Image URL: <input type="text" name="image"></label>
+      `;
+      container.appendChild(div);
+    }
+
+    function downloadJSON() {
+      const items = [];
+      document.querySelectorAll('.item').forEach(div => {
+        const heading = div.querySelector('input[name="heading"]').value;
+        const dish = div.querySelector('input[name="dish"]').value;
+        const price = div.querySelector('input[name="price"]').value;
+        const description = div.querySelector('textarea[name="description"]').value;
+        const image = div.querySelector('input[name="image"]').value;
+
+        if (heading.trim() || dish.trim()) { // include only if heading or dish filled
+          items.push({ heading, dish, price, description, image });
+        }
+      });
+
+      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(items, null, 2));
+      const dlAnchor = document.createElement('a');
+      dlAnchor.setAttribute("href", dataStr);
+      dlAnchor.setAttribute("download", "menu.json");
+      dlAnchor.click();
+    }
+  </script>
+</body>
+</html>
