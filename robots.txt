@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://radhika-amar-desai.github.io/NorthIndianChapati/sitemap.xml
